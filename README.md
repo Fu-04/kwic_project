@@ -27,7 +27,7 @@ kwic_project/
 ## 安装
 
 ```bash
-git clone <repo_url>
+git clone https://github.com/Fu-04/kwic_project
 cd kwic_project
 python -m venv venv
 # Windows:
