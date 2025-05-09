@@ -12,16 +12,24 @@
 ## 目录结构
 kwic_project/
 ├── kwic/
-│   ├── algorithms.py
-│   ├── filters/
-│   │   ├── circular_shifter.py
-│   │   └── sorter.py
-│   ├── input.py
-│   ├── output.py
-│   ├── api.py
-│   └── main.py
-├── requirements.txt
-└── README.md
+│   ├── init.py
+│   ├── algorithms.py           # 核心算法模块
+│   ├── handlers/               # 输入输出处理器
+│   │   ├── init.py
+│   │   ├── input_handler.py    # 控制台与文件输入处理
+│   │   └── output_handler.py   # 控制台与文件输出处理
+│   ├── filters/                # 过滤器模块
+│   │   ├── init.py
+│   │   ├── circular_shifter.py # 循环移位过滤器
+│   │   ├── sorter.py           # 排序过滤器
+│   │   ├── punctuation_filter.py # 标点过滤插件
+│   │   └── sensitive_filter.py # 敏感词过滤插件
+│   ├── api.py                  # FastAPI 接口
+│   ├── pipeline.py             # 管道管理与执行入口
+│   └── main.py                 # 脚本入口
+├── pipeline.yml                # 过滤器配置示例
+├── requirements.txt            # 依赖清单
+└── README.md                   # 项目说明文档
 
 
 ## 安装
