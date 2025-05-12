@@ -1,0 +1,4 @@
+filters:
+  - circular_shifter
+  - sorter
+  - sensitive_filter
